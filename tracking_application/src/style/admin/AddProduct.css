@@ -1,0 +1,147 @@
+/* Add Product Form */
+.add-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.add-product-card {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 55px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 0px;
+}
+
+.success-messagea {
+  color: #10b981;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #ef4444;
+  background-color: #fee2e2;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-product-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.flex-1 {
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #374151;
+  text-transform: capitalize;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  outline: none;
+}
+
+.field-error {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.image-upload-box {
+  border: 2px dashed #e5e7eb;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f9fafb;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-upload-text {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.form-textarea {
+  width: 100%;
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  outline: none;
+  resize: none;
+}
+
+.form-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-add-product {
+  padding: 12px 30px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
+  transition: transform 0.1s;
+}
+
+.btn-add-product:hover {
+  transform: translateY(-1px);
+}
+
+.btn-add-product:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

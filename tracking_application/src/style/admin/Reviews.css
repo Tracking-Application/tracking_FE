@@ -1,0 +1,119 @@
+/* Reviews */
+.reviews-page-container {
+  padding: 1rem;
+}
+
+.beta-emblem-banner {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(251, 191, 36, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.beta-emblem-banner::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  animation: shine 8s infinite linear;
+}
+
+@keyframes shine {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.beta-emblem-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.beta-icon {
+  font-size: 2.5rem;
+  background: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.beta-text h3 {
+  margin: 0;
+  color: #78350f;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+}
+
+.beta-text p {
+  margin: 0.25rem 0 0;
+  color: #92400e;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.beta-badge {
+  margin-left: auto;
+  background: #78350f;
+  color: #fbbf24;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid #fbbf24;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.review-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-product {
+  font-weight: 600;
+  color: #111827;
+}
+
+.review-stars {
+  color: #f59e0b;
+}
+
+.review-comment {
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.review-user {
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: right;
+}

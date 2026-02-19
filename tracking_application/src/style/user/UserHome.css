@@ -1,0 +1,243 @@
+.user-home-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* NAVBAR - ORIGINAL STYLES RESTORED */
+.user-navbar {
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.nav-max-width {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+.nav-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.nav-logo-box {
+  width: 2rem;
+  height: 2rem;
+  background-color: #10b981;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.nav-logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111827;
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.icon-btn {
+  padding: 0.5rem;
+  color: #4b5563;
+  background: none;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  position: relative;
+}
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #dc2626;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  transform: translate(50%, -50%);
+}
+.btn-signout {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #ef4444;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  /* margin-right: -50px;
+  margin-left: 40px; */
+}
+
+/* COMPACT GRID DESIGN */
+.user-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+.main-header {
+  margin-bottom: 1.5rem;
+}
+.main-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+.main-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.book-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #eef2f6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+}
+
+.book-image-container {
+  background-color: #f8fafc;
+  height: 260px; /* Increased image height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.book-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.book-details {
+  padding: 10px 14px 14px 14px; /* Tight padding */
+  display: flex;
+  flex-direction: column;
+}
+
+.book-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2px;
+}
+
+.book-text {
+  cursor: pointer;
+  flex: 1;
+  overflow: hidden;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-author {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 1px;
+}
+
+/* Quantity selector shifted slightly lower */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 2px;
+  margin-top: 8px; /* Moves it down relative to the title */
+  margin-left: 10px;
+}
+
+.quantity-selector button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #475569;
+}
+
+.quantity-selector span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Price and Add button section pulled higher */
+.book-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 8px; /* Reduced space */
+  margin-top: 2px; /* Pulls footer up */
+}
+
+.book-price {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #10b981;
+}
+
+.btn-add-cart {
+  background-color: #10b981;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-add-cart:hover {
+  background-color: #059669;
+}
+
+.status-msg {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+}

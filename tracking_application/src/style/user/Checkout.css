@@ -1,0 +1,192 @@
+:root {
+  --primary-green: #2d5a4c;
+  --bg-color: #f4f7f6;
+  --card-bg: #e9f0ee;
+  --input-border: #a5c0b8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+}
+
+/* Header Styling */
+.checkout-header {
+  background-color: var(--primary-green);
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cursive', sans-serif; /* Use a script font if available */
+  margin: 0;
+}
+
+.nav-links span {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Layout Structure */
+.checkout-main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  text-align: center;
+  color: #333;
+  padding-bottom: 3rem;
+}
+
+.back-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.checkout-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Card Styling */
+.card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  flex: 1;
+}
+
+.card h3 {
+  text-align: center;
+  margin-top: 0;
+  border-bottom: 1px solid #ccd9d5;
+  padding-bottom: 1rem;
+  color: #444;
+}
+
+/* Form Inputs */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  background-color: #f9fdfc;
+  box-sizing: border-box;
+}
+
+/* Summary Details */
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.item-details {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.item-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-name { margin: 0; font-weight: 500; }
+.item-price { margin: 0; color: #666; font-size: 0.9rem; }
+
+.total-row {
+  text-align: right;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.continue-btn {
+  background-color: #3e8e75;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left; /* Aligned to left as per image */
+  margin-top: 10px;
+}
+
+/* Existing styles remain... (see previous message) */
+
+/* Navbar - Cleaned up */
+.checkout-header {
+  background-color: #2d5a4c;
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* New Button Wrapper to center it outside the grid */
+.button-wrapper {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  margin-top: 30px;
+  width: 100%;
+}
+
+.continue-btn {
+  background-color: #3e8e75;
+  color: white;
+  border: none;
+  padding: 12px 40px; /* Made it slightly wider for better look */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #2d5a4c;
+}
+
+/* Remove the float from previous summary-section button if any */
+.summary-section .continue-btn {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkout-grid {
+    flex-direction: column;
+  }
+}
+
+.error-message {
+  color: #cc0000;      /* Red text color */
+  font-size: 0.85rem;  /* Slightly larger for readability */
+  margin-top: 4px;     /* Small gap from the input box */
+  margin-bottom: 12px; 
+  background: none;    /* Background-ai remove seiyyum */
+  padding: 0;          /* Extra spacing-ai remove seiyyum */
+  text-align: left;    /* Left alignment is standard for forms */
+}
